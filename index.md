@@ -1,7 +1,11 @@
 ## An Introspective Study of Cardinality Estimation in SPARQL
 We performed an extensive experiments to show the ...
 ### Persistent URI, Licence:
-All of the data and results presented in our evaluation are available online from https://github.com/kworkr/code/ under [Apache License 2.0](https://github.com/lemon-alt/rdf/blob/master/LICENSE) .
+All of the data and results presented in our evaluation are available online at
+[https://github.com/kworkr/repo/](https://github.com/kworkr/repo/) under [Apache License 2.0](https://github.com/lemon-alt/rdf/blob/master/LICENSE) .
+
+
+
  ### Datasets and Queries used:
 | *Dataset*   | *RDF Dump*  | *Queries* |
 |-------------|-----------|----------|
@@ -10,6 +14,11 @@ All of the data and results presented in our evaluation are available online fro
 |[WATDIV-100M](https://link.springer.com/chapter/10.1007/978-3-319-11964-9_13)|[Download](http://dsg.uwaterloo.ca/watdiv/watdiv.100M.tar.bz2) | [See WATDIV Queries]()
 |[WATDIV-1Billion](https://link.springer.com/chapter/10.1007/978-3-319-11964-9_13)|[Download](https://hobbitdata.informatik.uni-leipzig.de/intelligent-SPARQL-interface/) | [Seee WATDIV Queries]()
 
+
+Dataset | RDF Dump | Queries
+------------ | ------------- | -------------
+Content from cell 1 | Content from cell 2 | Content from cell 2
+Content in the first column | Content in the second column | Content in the second column
 
 
 ### Benchmark execution:
