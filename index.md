@@ -9,6 +9,7 @@ All of the data and results presented in our evaluation are available online at
 
 
  ### Datasets and Queries used:
+ We used the following datasets and queries: 
 
 Dataset | RDF Dump | Queries
 ------------ | ------------- | -------------
