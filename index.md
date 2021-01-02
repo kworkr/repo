@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+## An Introspective Study of Cardinality Estimation in SPARQL
+We performed an extensive experiments to show the ...
+### Persistent URI, Licence:
+All of the data and results presented in our evaluation are available online from https://github.com/kworkr/code/ under [Apache License 2.0](https://github.com/lemon-alt/rdf/blob/master/LICENSE) .
+ ### Datasets and Queries used:
+| *Dataset*   | *RDF Dump*  | *Queries* |
+|-------------|-----------|----------|
+|[LUBM](http://swat.cse.lehigh.edu/projects/lubm/)|[Download](http://130.226.98.152/datasets/lubm.n3)| [See LUBM Queries]() 
+|[YAGO-4](http://swat.cse.lehigh.edu/projects/lubm/)|[Download](http://130.226.98.152/datasets/lubm.n3)| [See YAGO-4 Queries]() 
+|[WATDIV-100M](https://link.springer.com/chapter/10.1007/978-3-319-11964-9_13)|[Download](http://dsg.uwaterloo.ca/watdiv/watdiv.100M.tar.bz2) | [See WATDIV Queries]()
+|[WATDIV-1Billion](https://link.springer.com/chapter/10.1007/978-3-319-11964-9_13)|[Download](https://hobbitdata.informatik.uni-leipzig.de/intelligent-SPARQL-interface/) | [Seee WATDIV Queries]()
 
-You can use the [editor on GitHub](https://github.com/kworkr/repo/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Benchmark execution:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Evaluation results:
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kworkr/repo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Authors:
+* Annonymous 
