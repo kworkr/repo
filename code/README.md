@@ -1,4 +1,4 @@
-# RDFShapes
+# Code
 
 This repository contains code for our experimental study.
 
