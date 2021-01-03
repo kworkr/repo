@@ -47,7 +47,7 @@ public class Main {
     
     private static void benchmark() {
         if (Boolean.parseBoolean(ConfigManager.getProperty("benchmarkQuery"))) {
-            if (Boolean.parseBoolean(ConfigManager.getProperty("shapeExec")) || Boolean.parseBoolean(ConfigManager.getProperty("baselineExec")) || Boolean.parseBoolean(ConfigManager.getProperty("executeQueryForOtherPurpose"))) {
+            if (Boolean.parseBoolean(ConfigManager.getProperty("shapeExec")) || Boolean.parseBoolean(ConfigManager.getProperty("globalStatsExec")) || Boolean.parseBoolean(ConfigManager.getProperty("executeQueryForOtherPurpose"))) {
                 //load the shapes stats in the memory
                 RdfUtils.loadShapesIntoMemStore(getShapesModelIRI());
                 predicateShapeDistMap = new InMemComputation().getPredicatesCandidateShapesProp();
@@ -239,7 +239,7 @@ public class Main {
     }
     
     public static String getShapesModelIRI() {
-        if (Boolean.parseBoolean(ConfigManager.getProperty("baselineExec")))
+        if (Boolean.parseBoolean(ConfigManager.getProperty("globalStatsExec")))
             return ConfigManager.getProperty("shapesModelIRI") + "void/";
         else return ConfigManager.getProperty("shapesModelIRI");
     }

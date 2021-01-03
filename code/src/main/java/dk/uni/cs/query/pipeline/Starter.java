@@ -37,7 +37,7 @@ public class Starter {
     boolean timeOutFlagForCurrentQuery = false;
     public final boolean benchmarkShapeApproach = Boolean.parseBoolean(ConfigManager.getProperty("shapeExec"));
     public final boolean benchmarkJena = Boolean.parseBoolean(ConfigManager.getProperty("jenaExec"));
-    public final boolean benchmarkVoidApproach = Boolean.parseBoolean(ConfigManager.getProperty("baselineExec"));
+    public final boolean benchmarkVoidApproach = Boolean.parseBoolean(ConfigManager.getProperty("globalStatsExec"));
     public final boolean benchmarkQueryGivenOrder = Boolean.parseBoolean(ConfigManager.getProperty("executeQueryAsItIs"));
     public final boolean benchmarkQueryOtherPurpose = Boolean.parseBoolean(ConfigManager.getProperty("executeQueryForOtherPurpose"));
     private long queryTimeOutInMS = 300000; // 5 minutes
