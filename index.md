@@ -21,15 +21,15 @@ All of the data and results presented in our experimental study are available at
   Explain .. TDB ... then config file .. and so on.
   
   
-  ##### 1. Shapes Statistics
+  ###### 1. Shapes Statistics
   
-  ##### 2. Global Statistics
+  ###### 2. Global Statistics
   
-  ##### 3. Jena
+  ###### 3. Jena
   
-  ##### 4. Characteristics Sets
+  ###### 4. Characteristics Sets
     We used the extended characteristics sets implementation from [here](https://github.com/gmontoya/federatedOptimizer )
-  ##### 5. GraphDB
+  ###### 5. GraphDB
     We used onto:explain ....
 
 
