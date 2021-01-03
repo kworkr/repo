@@ -1,12 +1,15 @@
 ## An Introspective Study of Cardinality Estimation in SPARQL
-We performed an extensive experiments to show the ...
+We performed an extensive experiments to show the ... abstract ...
 
 
 ### Persistent URI & Licence:
 All of the data and results presented in our experimental study are available at
 [https://github.com/kworkr/repo/](https://github.com/kworkr/repo/) under [Apache License 2.0](https://github.com/lemon-alt/rdf/blob/master/LICENSE) .
 
+
+
 ### How does it work?
+
 
 #### 1. Generating SHACL Shapes Graph:
     Given and RDF graph, we used [shaclgen](https://pypi.org/project/shaclgen/) library to generate its SHACL shapes graph.
@@ -25,12 +28,12 @@ All of the data and results presented in our experimental study are available at
   ##### 3. Jena
   
   ##### 4. Characteristics Sets
-           We used the extended characteristics sets implementation from [here](https://github.com/gmontoya/federatedOptimizer )
+    We used the extended characteristics sets implementation from [here](https://github.com/gmontoya/federatedOptimizer )
   ##### 5. GraphDB
-            We used onto:explain ....
+    We used onto:explain ....
 
 
-### Datasets, Queries and the Stats used:
+### Datasets, Queries and the Statistics used:
 We used the following datasets, queries, and the statistics: 
 
 Dataset | RDF Dump | Queries | Stats
