@@ -5,7 +5,7 @@ Cardinality estimates are essential for finding a good join order to improve que
 
 ### Persistent URI & Licence:
 All of the data and results presented in our experimental study are available at
-[https://github.com/kworkr/repo/](https://github.com/kworkr/repo/) under [Apache License 2.0](https://github.com/lemon-alt/rdf/blob/master/LICENSE) .
+[https://github.com/kworkr/repo/](https://github.com/kworkr/repo/) under [Apache License 2.0](https://github.com/kworkr/repo/blob/master/LICENSE) .
 
 
 
