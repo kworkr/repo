@@ -1,27 +1,53 @@
 ## An Introspective Study of Cardinality Estimation in SPARQL
-We performed an extensive experiments to show the ...
+
+Cardinality estimates are essential for finding a good join order to improve query performance. In order to access the impact of having various level of statistics of RDF graphs on cardinality estimation, we have performed this experimental study. We have generated global and shapes statistics and proposed a join ordering technique to make use of these statistics and estimate cardinalities to propose efficient query plans. We used synthetic (LUBM, WATDIV) and a real dataset (i.e., YAGO-4). We compared against the query plans proposed by Jena ARQ query engine, GraphDB, and Characteristics Sets approach. At this page we present technical details of our experimental study such as how to generate these statistics, how to run the experiments, the links to the datasets, and finally the results.
 
 
-### Persistent URI, Licence:
-All of the data and results presented in our evaluation are available online at
-[https://github.com/kworkr/repo/](https://github.com/kworkr/repo/) under [Apache License 2.0](https://github.com/lemon-alt/rdf/blob/master/LICENSE) .
+### Persistent URI & Licence:
+All of the data and results presented in our experimental study are available at
+[https://github.com/kworkr/repo/](https://github.com/kworkr/repo/) under [Apache License 2.0](https://github.com/kworkr/repo/blob/master/LICENSE) .
 
 
 
- ### Datasets and Queries used:
- We used the following datasets and queries: 
-
-Dataset | RDF Dump | Queries
------------- | ------------- | -------------
-[LUBM](http://swat.cse.lehigh.edu/projects/lubm/)|[Download](http://130.226.98.152/datasets/lubm.n3)| [See LUBM Queries](https://github.com/kworkr/repo/tree/master/queries/lubmQueries) 
-[YAGO-4](http://swat.cse.lehigh.edu/projects/lubm/)|[Download](http://130.226.98.152/datasets/lubm.n3)| [See YAGO-4 Queries](https://github.com/kworkr/repo/tree/master/queries/yago-4Queries) 
-[WATDIV-100M](https://link.springer.com/chapter/10.1007/978-3-319-11964-9_13)|[Download](http://dsg.uwaterloo.ca/watdiv/watdiv.100M.tar.bz2) | [See WATDIV Queries](https://github.com/kworkr/repo/tree/master/queries/watdivQueries)
-[WATDIV-1Billion](https://link.springer.com/chapter/10.1007/978-3-319-11964-9_13)|[Download](https://hobbitdata.informatik.uni-leipzig.de/intelligent-SPARQL-interface/) | [See WATDIV Queries](https://github.com/kworkr/repo/tree/master/queries/watdivQueries)
+### How does it work?
 
 
-### Benchmark execution:
+#### 1. Generating SHACL Shapes Graph:
+    Given and RDF graph, we used [shaclgen](https://pypi.org/project/shaclgen/) library to generate its SHACL shapes graph.
 
-### Evaluation results:
+#### 2. Generating Shapes Statistics:
+    We used Shapes Annotator component to extend SHACL shapes graph with the statistics of the RDF graph.
+  
+#### 3. Running Experiments:
+  Explain .. TDB ... then config file .. and so on.
+  
+  
+  * ###### 1. Shapes Statistics
+  
+  * ###### 2. Global Statistics
+  
+  * ###### 3. Jena
+  
+  * ###### 4. Characteristics Sets
+    We used the extended characteristics sets implementation from [here](https://github.com/gmontoya/federatedOptimizer )
+  * ###### 5. GraphDB
+    We used onto:explain ....
+
+
+### Datasets, Queries and the Statistics used:
+We used the following datasets, queries, and the statistics: 
+
+Dataset | RDF Dump | Queries | Stats
+------------ | ------------- | -------------| -------------
+[LUBM](http://swat.cse.lehigh.edu/projects/lubm/)|[Download](http://130.226.98.152/datasets/lubm.n3)| [See LUBM Queries](https://github.com/kworkr/repo/tree/master/queries/lubmQueries) | [Global and Shapes Statistics](https://github.com/kworkr/repo/tree/master/globalAndShapesStats/lubmStats)
+[YAGO-4](http://swat.cse.lehigh.edu/projects/lubm/)|[Download](http://130.226.98.152/datasets/lubm.n3)| [See YAGO-4 Queries](https://github.com/kworkr/repo/tree/master/queries/yago-4Queries) | [Global and Shapes Statistics](https://github.com/kworkr/repo/tree/master/globalAndShapesStats/yagoStats)
+[WATDIV-100M](https://link.springer.com/chapter/10.1007/978-3-319-11964-9_13)|[Download](http://dsg.uwaterloo.ca/watdiv/watdiv.100M.tar.bz2) | [See WATDIV Queries](https://github.com/kworkr/repo/tree/master/queries/watdivQueries)| [Global and Shapes Statistics](https://github.com/kworkr/repo/tree/master/globalAndShapesStats/watdivStats)
+[WATDIV-1Billion](https://link.springer.com/chapter/10.1007/978-3-319-11964-9_13)|[Download](https://hobbitdata.informatik.uni-leipzig.de/intelligent-SPARQL-interface/) | [See WATDIV Queries](https://github.com/kworkr/repo/tree/master/queries/watdivQueries)| [Global and Shapes Statistics](https://github.com/kworkr/repo/tree/master/globalAndShapesStats/watdivStats)
+
+
+
+  
+### Evaluation Results:
 
 
 ### Authors:
