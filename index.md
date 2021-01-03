@@ -1,5 +1,6 @@
 ## An Introspective Study of Cardinality Estimation in SPARQL
-We performed an extensive experiments to show the ... abstract ...
+
+Cardinality estimates are essential for finding a good join order to improve query performance. In order to access the impact of having various level of statistics of RDF graphs on cardinality estimation, we have performed this experimental study. We have generated global and shapes statistics and proposed a join ordering technique to make use of these statistics and estimate cardinalities to propose efficient query plans. We used synthetic (LUBM, WATDIV) and a real dataset (i.e., YAGO-4). We compared against the query plans proposed by Jena ARQ query engine, GraphDB, and Characteristics Sets approach. At this page we present technical details of our experimental study such as how to generate these statistics, how to run the experiments, the links to the datasets, and finally the results.
 
 
 ### Persistent URI & Licence:
