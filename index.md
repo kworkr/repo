@@ -19,10 +19,12 @@ Dataset | RDF Dump | Queries | Stats
 [WATDIV-1Billion](https://link.springer.com/chapter/10.1007/978-3-319-11964-9_13)|[Download](https://hobbitdata.informatik.uni-leipzig.de/intelligent-SPARQL-interface/) | [See WATDIV Queries](https://github.com/kworkr/repo/tree/master/queries/watdivQueries)| [Global and Shapes Statistics](https://github.com/kworkr/repo/tree/master/globalAndShapesStats/watdivStats)
 
 
-### Benchmark execution:
+### Experiments Execution:
 
+Explain.... 
 
-
+For CS:
+https://github.com/gmontoya/federatedOptimizer 
 ### Evaluation results:
 
 
