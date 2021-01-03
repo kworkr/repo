@@ -19,9 +19,16 @@ Dataset | RDF Dump | Queries | Stats
 [WATDIV-1Billion](https://link.springer.com/chapter/10.1007/978-3-319-11964-9_13)|[Download](https://hobbitdata.informatik.uni-leipzig.de/intelligent-SPARQL-interface/) | [See WATDIV Queries](https://github.com/kworkr/repo/tree/master/queries/watdivQueries)| [Global and Shapes Statistics](https://github.com/kworkr/repo/tree/master/globalAndShapesStats/watdivStats)
 
 
-### Experiments Execution:
+### How does it work?
 
-Explain.... 
+###### 1. Generating SHACL Shapes Graph:
+Given and RDF graph, we used [shaclgen](https://pypi.org/project/shaclgen/) library to generate its SHACL shapes graph.
+
+###### 2. Generating Shapes Statistics:
+
+###### 3. Running Experiments:
+
+
 
 For CS:
 https://github.com/gmontoya/federatedOptimizer 
