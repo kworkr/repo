@@ -57,7 +57,3 @@ Dataset | RDF Dump | Queries | Stats
 ### Evaluation Results:
 
 Discussed in the paper.
-
-
-### Authors:
-* Annonymous 
