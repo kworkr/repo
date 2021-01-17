@@ -22,16 +22,16 @@ Dataset | RDF Dump | Queries | Stats
 ### How does it work?
 
 #### 1. Generating SHACL Shapes Graph:
-      Given an RDF graph, we used [shaclgen](https://pypi.org/project/shaclgen/) library to generate its SHACL shapes graph.
+      Given an RDF graph, we used shaclgen https://pypi.org/project/shaclgen/ library to generate its SHACL shapes graph.
 
 #### 2. Generating Shapes Statistics:
-      We use Shapes Annotator component to extend SHACL shapes graph with the statistics of the RDF graph. E.g., for YAGO-4 dataset, we use the [yagoConfig.properties](https://github.com/kworkr/repo/blob/master/code/yagoConfig.properties) file by setting the generateStatistics=true.
+      We use Shapes Annotator component to extend SHACL shapes graph with the statistics of the RDF graph. E.g., for YAGO-4 dataset, we use the https://github.com/kworkr/repo/blob/master/code/yagoConfig.properties file by setting the generateStatistics=true.
   
 #### 3. Running Experiments:
    We loaded all datasets in Jena TDB, bundled the code in a Jar and created a config file to run each type of experiment. For example we used the following pattern fo run experiments using:
   
   * ###### 1. Shapes Statistics
-        > Set the appropriate paths for the Jena TDB and the directory containing queries in the config files, e.g., for YAGO-4 dataset [yagoConfig.properties](https://github.com/kworkr/repo/blob/master/code/yagoConfig.properties)
+        > Set the appropriate paths for the Jena TDB and the directory containing queries in the config files, e.g., for YAGO-4 dataset https://github.com/kworkr/repo/blob/master/code/yagoConfig.properties
         > Set the value fo shapeExec=true , set the number of times the query should run.
         > Use java -jar code.jar yagoConfig.properties YAGO  &> output.log
         > Logs will be saved in OUTPUT_QUERY directory as benchmarks.csv and also in output.log file. 
@@ -44,7 +44,7 @@ Dataset | RDF Dump | Queries | Stats
         > Follow the same steps as mentioned above except set the value shapeExec and globalStatsExec as false and jenaExec=true.
     
   * ###### 4. GraphDB
-        > We loaded each dataset in GraphDB and used 'onto:explain' feature explained [here](https://graphdb.ontotext.com/documentation/standard/explain-plan.html) to see the plans and their cardinalities. 
+        > We loaded each dataset in GraphDB and used 'onto:explain' feature explained https://graphdb.ontotext.com/documentation/standard/explain-plan.html to see the plans and their cardinalities. 
         
   * ###### 5. Characteristics Sets
         > We used the extended characteristics sets implementation from https://github.com/gmontoya/federatedOptimizer to generate characteristics Sets for each dataset and then gnerated their query plans.
