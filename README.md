@@ -42,12 +42,16 @@ Dataset | RDF Dump | Queries | Stats
         
   * ###### 3. Jena
         > Follow the same steps as mentioned above except set the value shapeExec and globalStatsExec as false and jenaExec=true.
-     
-  * ###### 4. Characteristics Sets
-        > We used the extended characteristics sets implementation from [here](https://github.com/gmontoya/federatedOptimizer) to generate characteristics Sets for each dataset and then gnerated their query plans.
     
-  * ###### 5. GraphDB
+  * ###### 4. GraphDB
         > We loaded each dataset in GraphDB and used 'onto:explain' feature explained [here](https://graphdb.ontotext.com/documentation/standard/explain-plan.html) to see the plans and their cardinalities. 
+        
+  * ###### 5. Characteristics Sets
+        > We used the extended characteristics sets implementation from https://github.com/gmontoya/federatedOptimizer to generate characteristics Sets for each dataset and then gnerated their query plans.
+  
+  * ###### 6. SumRDF Cardinality Estimator (official [link](https://www.cs.ox.ac.uk/isg/tools/SumRDF/))
+        > We implemented our join ordering algorithm using SumRDF cardinality estimator. The code is available in the folder https://github.com/kworkr/repo/tree/master/sumRDF 
+
      
 
 ### Evaluation Results:
