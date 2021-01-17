@@ -22,10 +22,10 @@ Dataset | RDF Dump | Queries | Stats
 ### How does it work?
 
 #### 1. Generating SHACL Shapes Graph:
-      Given an RDF graph, we used [shaclgen](https://pypi.org/project/shaclgen/) library to generate its SHACL shapes graph.
+      Given an RDF graph, we used shaclgen https://pypi.org/project/shaclgen/ library to generate its SHACL shapes graph.
 
 #### 2. Generating Shapes Statistics:
-      We use Shapes Annotator component to extend SHACL shapes graph with the statistics of the RDF graph. E.g., for YAGO-4 dataset, we use the [yagoConfig.properties](https://github.com/kworkr/repo/blob/master/code/yagoConfig.properties) file by setting the generateStatistics=true.
+      We use Shapes Annotator component to extend SHACL shapes graph with the statistics of the RDF graph. E.g., for YAGO-4 dataset, we use the https://github.com/kworkr/repo/blob/master/code/yagoConfig.properties file by setting the generateStatistics=true.
   
 #### 3. Running Experiments:
    We loaded all datasets in Jena TDB, bundled the code in a Jar and created a config file to run each type of experiment. For example we used the following pattern fo run experiments using:
