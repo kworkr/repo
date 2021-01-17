@@ -56,4 +56,4 @@ Dataset | RDF Dump | Queries | Stats
 
 ### Evaluation Results:
 
-Discussed in the paper.
+Discussed in the paper and available in folder [results_data](https://github.com/kworkr/repo/tree/master/results_data)
